@@ -18,42 +18,43 @@
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.html" className="nav__logo">
+            <a href="#" class="nav__logo">
                 <img class="logo" src="assets/img/pp.jfif"/>
             </a>
-
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="index.html#home" class="nav__link active-link">Inicio</a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#about" class="nav__link">sobre nosotros</a>
+                        <a href="index.html#about" class="nav__link">Sobre nosotros</a>
                     </li>
                     <li class="nav__item">
                         <a href="index.html#products" class="nav__link">Productos</a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#contact" class="nav__link">Contactanos</a>
+                        <a href="index.html#contact" class="nav__link">Contáctanos</a>
                     </li>
                 </ul>
-
                 <div class="nav__close" id="nav-close">
                     <i class="ri-close-line"></i>
                 </div>
             </div>
-
             <div class="nav__btns">
                 <!-- Theme change button -->
-                <a href="compras.html" class="button button--flex">
-                    carrito <i class="ri-shopping-cart-fill"></i>
-                </a>
+                <button class="button button--flex modalToggle">
+                    Carrito <i class="ri-shopping-cart-fill"></i>
+                </button>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-line"></i>
                 </div>
             </div>
         </nav>
     </header>
+    <div class="modal" id="modalCarrito">
+            <div class="flexWrap" id="containerProducts">
+            </div>
+    </div>
     <section class="product section container" id="products">
 
         <div class="product__container grid">
